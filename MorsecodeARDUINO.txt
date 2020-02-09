@@ -1,0 +1,393 @@
+const int led = 13;
+const int stoppled = 12;
+const int goled = 11;
+int data = 0;
+char userInput;
+
+void setup(){
+  pinMode (led, OUTPUT);
+  pinMode (stoppled, OUTPUT);
+  pinMode (goled, OUTPUT);
+   Serial.begin(9600);
+  }
+
+
+ void loop(){
+ if (Serial.available()>0){
+  userInput = Serial.read();
+
+    if (userInput == 'A'){
+
+      data = analogRead(led);
+      Serial.println("A");
+      digitalWrite(led, HIGH);
+      delay(100);
+      digitalWrite(led, LOW);
+      delay(50);
+      digitalWrite(led, HIGH);
+      delay(200);
+      digitalWrite(led, LOW);
+      delay(50);
+    }
+
+    if (userInput == 'B'){
+
+      data = analogRead(led);
+      Serial.println("B");
+      digitalWrite(led, HIGH);
+      delay(200);
+      digitalWrite(led, LOW);
+      delay(50);
+      digitalWrite(led, HIGH);
+      delay(100);
+      digitalWrite(led, LOW);
+      delay(50);
+      digitalWrite(led, HIGH);
+      delay(100);
+      digitalWrite(led, LOW);
+      delay(50);
+      digitalWrite(led, HIGH);
+      delay(100);
+      digitalWrite(led, LOW);
+      delay(50);
+    }
+    if (userInput == 'C'){
+      data = analogRead(led);
+      Serial.println("C");
+      digitalWrite(led, HIGH);
+      delay(200);
+      digitalWrite(led, LOW);
+      delay(50);
+      digitalWrite(led, HIGH);
+      delay(100);
+      digitalWrite(led, LOW);
+      delay(50);
+      digitalWrite(led, HIGH);
+      delay(200);
+      digitalWrite(led, LOW);
+      delay(50);
+      digitalWrite(led, HIGH);
+      delay(100);
+      digitalWrite(led, LOW);
+      delay(50);
+    }
+    if (userInput == 'D'){
+      data = analogRead(led);
+      Serial.println("D");
+      digitalWrite(led, HIGH);
+      delay(200);
+      digitalWrite(led, LOW);
+      delay(50);
+      digitalWrite(led, HIGH);
+      delay(100);
+      digitalWrite(led, LOW);
+      delay(50);
+      digitalWrite(led, HIGH);
+      delay(100);
+      digitalWrite(led, LOW);
+      delay(50);
+    }
+    if (userInput == 'E'){
+      data = analogRead(led);
+      Serial.println("E");
+      digitalWrite(led, HIGH);
+      delay(100);
+      digitalWrite(led, LOW);
+      delay(50);
+    }
+    if (userInput == 'F'){
+      data = analogRead(led);
+      Serial.println("F");
+      digitalWrite(led, HIGH);
+      delay(100);
+      digitalWrite(led, LOW);
+      delay(50);
+      digitalWrite(led, HIGH);
+      delay(100);
+      digitalWrite(led, LOW);
+      delay(50);
+      digitalWrite(led, HIGH);
+      delay(200);
+      digitalWrite(led, LOW);
+      delay(50);
+      digitalWrite(led, HIGH);
+      delay(100);
+      digitalWrite(led, LOW);
+      delay(50);
+    }
+    if (userInput == 'G'){
+      data = analogRead(led);
+      Serial.println("G");
+      digitalWrite(led, HIGH);
+      delay(200);
+      digitalWrite(led, LOW);
+      delay(50);
+      digitalWrite(led, HIGH);
+      delay(200);
+      digitalWrite(led, LOW);
+      delay(50);
+      digitalWrite(led, HIGH);
+      delay(100);
+      digitalWrite(led, LOW);
+      delay(50);
+    }
+    if (userInput == 'H'){
+      data = analogRead(led);
+      Serial.println("H");
+      digitalWrite(led, HIGH);
+      delay(100);
+      digitalWrite(led, LOW);
+      delay(50);
+      digitalWrite(led, HIGH);
+      delay(100);
+      digitalWrite(led, LOW);
+      delay(50);
+      digitalWrite(led, HIGH);
+      delay(100);
+      digitalWrite(led, LOW);
+      delay(50);
+      digitalWrite(led, HIGH);
+      delay(100);
+      digitalWrite(led, LOW);
+      delay(50);
+    }
+    if (userInput == 'I'){
+      data = analogRead(led);
+      Serial.println("I");
+      digitalWrite(led, HIGH);
+      delay(100);
+      digitalWrite(led, LOW);
+      delay(50);
+      digitalWrite(led, HIGH);
+      delay(100);
+      digitalWrite(led, LOW);
+      delay(50);
+    }
+    if (userInput == 'J'){
+      data = analogRead(led);
+      Serial.println("J");
+      digitalWrite(led, HIGH);
+      delay(100);
+      digitalWrite(led, LOW);
+      delay(50);
+      digitalWrite(led, HIGH);
+      delay(200);
+      digitalWrite(led, LOW);
+      delay(50);
+      digitalWrite(led, HIGH);
+      delay(200);
+      digitalWrite(led, LOW);
+      delay(50);
+      digitalWrite(led, HIGH);
+      delay(200);
+      digitalWrite(led, LOW);
+      delay(50);
+
+    }
+    if (userInput == 'K'){
+      data = analogRead(led);
+      Serial.println("K");
+      digitalWrite(led, HIGH);
+      delay(200);
+      digitalWrite(led, LOW);
+      delay(50);
+      digitalWrite(led, HIGH);
+      delay(100);
+      digitalWrite(led, LOW);
+      delay(50);
+      digitalWrite(led, HIGH);
+      delay(200);
+      digitalWrite(led, LOW);
+      delay(50);
+    }
+    if (userInput == 'L'){
+      data = analogRead(led);
+      Serial.println("L");
+      digitalWrite(led, HIGH);
+      delay(100);
+      digitalWrite(led, LOW);
+      delay(50);
+      digitalWrite(led, HIGH);
+      delay(200);
+      digitalWrite(led, LOW);
+      delay(50);
+      digitalWrite(led, HIGH);
+      delay(100);
+      digitalWrite(led, LOW);
+      delay(50);
+      digitalWrite(led, HIGH);
+      delay(100);
+      digitalWrite(led, LOW);
+      delay(50);
+      
+    }
+    if (userInput == 'M'){
+      data = analogRead(led);
+      Serial.println("M");
+      digitalWrite(led, HIGH);
+      delay(200);
+      digitalWrite(led, LOW);
+      delay(50);
+      digitalWrite(led, HIGH);
+      delay(200);
+      digitalWrite(led, LOW);
+      delay(50);
+    }
+    if (userInput == 'N'){
+      data = analogRead(led);
+      Serial.println("N");
+      digitalWrite(led, HIGH);
+      delay(200);
+      digitalWrite(led, LOW);
+      delay(50);
+      digitalWrite(led, HIGH);
+      delay(100);
+      digitalWrite(led, LOW);
+      delay(50);
+    }
+    if (userInput == 'O'){
+      data = analogRead(led);
+      Serial.println("O");
+      digitalWrite(led, HIGH);
+      delay(200);
+      digitalWrite(led, LOW);
+      delay(50);
+      digitalWrite(led, HIGH);
+      delay(200);
+      digitalWrite(led, LOW);
+      delay(50);
+      digitalWrite(led, HIGH);
+      delay(200);
+      digitalWrite(led, LOW);
+      delay(50);
+    }
+    if (userInput == 'P'){
+      data = analogRead(led);
+      Serial.println("P");
+      digitalWrite(led, HIGH);
+      delay(100);
+      digitalWrite(led, LOW);
+      delay(50);
+      digitalWrite(led, HIGH);
+      delay(200);
+      digitalWrite(led, LOW);
+      delay(50);
+      digitalWrite(led, HIGH);
+      delay(200);
+      digitalWrite(led, LOW);
+      delay(50);
+      digitalWrite(led, HIGH);
+      delay(100);
+      digitalWrite(led, LOW);
+      delay(50);
+    }
+    if (userInput == 'Q'){
+      data = analogRead(led);
+      Serial.println("Q");
+      digitalWrite(led, HIGH);
+      delay(200);
+      digitalWrite(led, LOW);
+      delay(50);
+      digitalWrite(led, HIGH);
+      delay(200);
+      digitalWrite(led, LOW);
+      delay(50);
+      digitalWrite(led, HIGH);
+      delay(100);
+      digitalWrite(led, LOW);
+      delay(50);
+      digitalWrite(led, HIGH);
+      delay(200);
+      digitalWrite(led, LOW);
+      delay(50);
+      
+ }
+    if (userInput == 'R'){
+      data = analogRead(led);
+      Serial.println("R");
+      digitalWrite(led, HIGH);
+      delay(100);
+      digitalWrite(led, LOW);
+      delay(50);
+      digitalWrite(led, HIGH);
+      delay(200);
+      digitalWrite(led, LOW);
+      delay(50);
+      digitalWrite(led, HIGH);
+      delay(100);
+      digitalWrite(led, LOW);
+      delay(50);
+      
+ }
+    if (userInput == 'S'){
+      data = analogRead(led);
+      Serial.println("S");
+      digitalWrite(led, HIGH);
+      delay(100);
+      digitalWrite(led, LOW);
+      delay(50);
+      digitalWrite(led, HIGH);
+      delay(100);
+      digitalWrite(led, LOW);
+      delay(50);
+      digitalWrite(led, HIGH);
+      delay(100);
+      digitalWrite(led, LOW);
+      delay(50);
+ }
+    if (userInput == 'Z'){
+      data = analogRead(led);
+      Serial.println("Z");
+      digitalWrite(led, HIGH);
+      delay(200);
+      digitalWrite(led, LOW);
+      delay(50);
+      digitalWrite(led, HIGH);
+      delay(200);
+      digitalWrite(led, LOW);
+      delay(50);
+      digitalWrite(led, HIGH);
+      delay(100);
+      digitalWrite(led, LOW);
+      delay(50);
+      digitalWrite(led, HIGH);
+      delay(100);
+      digitalWrite(led, LOW);
+      delay(50);
+    }
+    if (userInput == 'T'){
+      data = analogRead(led);
+      Serial.println("T");
+      digitalWrite(led, HIGH);
+      delay(200);
+      digitalWrite(led, LOW);
+      delay(50);
+    }
+    if (userInput == '|'){
+      data = analogRead(stoppled);
+      Serial.println("STOP");
+      digitalWrite(stoppled, HIGH);
+      delay(5000);
+      digitalWrite(stoppled, LOW);
+      delay(50);
+      digitalWrite(stoppled, HIGH);
+      delay(5000);
+      digitalWrite(stoppled, LOW);
+      delay(50);
+
+    }
+    if (userInput == '>'){
+      data = analogRead(goled);
+      Serial.println("GO");
+      digitalWrite(goled, HIGH);
+      delay(5000);
+      digitalWrite(goled, LOW);
+      delay(50);
+      digitalWrite(goled, HIGH);
+      delay(5000);
+      digitalWrite(goled, LOW);
+      delay(50);
+    }
+ }
+ 
+  }
