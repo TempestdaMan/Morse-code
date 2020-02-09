@@ -11,7 +11,7 @@ ARser = serial.Serial('COM4', '9600')
 
 
 
-#Definitioner
+#Definitions
 def bsos():
     currentDT = datetime.datetime.now()
     print("-> SOS button  #", str(currentDT))
