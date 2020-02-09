@@ -173,7 +173,7 @@ def T():
     
     
 
-#Kod
+#Code
 print("   Button         Time")
 
 
